@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<script>
+    //funcion tradicional 1
+    function resta(minuendo, sustraendo){
+        return minuendo - sustraendo;
+    }
+    console.log(resta(421, 212))
+
+    //funcion flecha 1
+    const resta2 = (minuendo, sustraendo) => minuendo - sustraendo;
+    console.log(resta2(300, 100))
+
+    //funcion tradicional 2
+    function saludar(nombre){
+        return "hola" + nombre;
+    }
+    console.log(saludar(" Brayan"));
+
+    //funcion flecha 2
+    const saludar2 =(nombre) => "Hola" + nombre;
+    console.log(saludar2(" Brayan"))
+
+    //funcion tradicional 3
+    function division(dividiendo, divisor){
+        return dividiendo / divisor;
+    }
+    console.log(division(1000, 12))
+
+    //funcion flecha 3
+    const division2 = (dividiendo, divisor) => dividiendo / divisor;
+    console.log(division2(340, 40))
+</script>

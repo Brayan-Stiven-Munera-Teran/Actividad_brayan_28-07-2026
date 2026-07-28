@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script>
+    const carrito = {
+        productos: [
+    {
+        producto: "carbon",
+        precio: 5500,
+        cantidad: "1kg"
+    },
+    {
+        producto: "sal",
+        precio: 5000,
+        cantidad: "2kg"
+    },
+    {
+        producto: "frijol",
+        precio: 8000,
+        cantidad: "1kg"
+    },
+],
+        mostrarCarrito() {
+        console.log("Su carrito contiene:");
+        let total = 0;
+        for (const producto of this.productos) {
+            console.log(`${producto.producto} - ${producto.cantidad} - $${producto.precio}`);
+            total += producto.precio;
+        }
+        console.log(`Su valor a pagar es: $${total}`);
+    }  
+};
+carrito.mostrarCarrito();
+</script>

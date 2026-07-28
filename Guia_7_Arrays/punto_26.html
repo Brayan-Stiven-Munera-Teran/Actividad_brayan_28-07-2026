@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<script>
+    let tarea= [1, 2, 3, 4, 5]; 
+    let nuevaTarea = tarea.slice() //copia todos
+    console.log(tarea.slice(3)) // 4, 5
+    console.log(tarea.slice(1,4)) // 2,3,4
+    tarea.push(1); 
+    tarea.shift(0); 
+    console.log(tarea); // [2, 3, 4, 5, 1]
+</script>
