@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script>
+    function idUnico() {
+        let id = 0;
+
+        return function () {
+            id++;
+            return id;
+        };
+    }
+    const nuevoid = idUnico();
+    console.log("ID :", nuevoid());
+    console.log("ID :", nuevoid());
+    console.log("ID :", nuevoid());
+    console.log("ID :", nuevoid());
+</script>

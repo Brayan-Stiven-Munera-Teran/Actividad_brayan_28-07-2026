@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+    function cuentaBancaria(saldoInicial){
+        let saldo = saldoInicial
+        return{
+            depositar:function(monto){
+                saldo=saldo+monto;
+                console.log("saldo : "+saldo);
+            },
+        
+        retirar:function(monto){
+            saldo=saldo-monto;
+            console.log("saldo : "+saldo)
+        }
+    }
+}
+    const miCuenta=cuentaBancaria(20000);
+    miCuenta.depositar(500);
+    miCuenta.retirar(6000);
+    
+</script> 
