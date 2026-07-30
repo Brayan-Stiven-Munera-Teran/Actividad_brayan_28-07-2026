@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+    let numero = 10;
+try {
+    numero.toUpperCase();
+} catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+}
+try {
+    let arreglo = new Array(-1);
+} catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+}
+try {
+    eval("let x = ;");
+} catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+}
+</script>

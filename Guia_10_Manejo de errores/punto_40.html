@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+    function validarFormulario(nombre, correo) {
+
+    if (nombre.trim() === "") {
+        throw new Error("El nombre es obligatorio.");
+    }
+
+    if (!correo.includes("@")) {
+        throw new Error("El correo no es válido.");
+    }
+
+    console.log("Formulario válido.");
+}
+try {
+    validarFormulario("Teran", "brayannnn234@gmail.com");
+} catch (error) {
+    console.log(error.message);
+}
+</script>

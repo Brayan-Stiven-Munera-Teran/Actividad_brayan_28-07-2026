@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script>
+function validarEdad(edad) {
+    if (edad < 0) {
+        throw new Error("La edad no puede ser negativa.");
+    }
+    console.log("Edad valida:", edad);
+}
+try {
+    validarEdad(45);
+} catch (error) {
+    console.log(error.message);
+}
+</script>
